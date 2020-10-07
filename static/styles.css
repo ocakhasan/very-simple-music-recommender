@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.musics{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+body{
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color:black;
+}
+
+.music{
+    display:flex;
+    margin:1rem;
+}
+
+.music-image{
+    flex:3;
+}
+
+.music-image a{
+    width:100%;
+}
+
+.music-image a>img{
+    width: 100%;
+}
+
+.music-name{
+    margin:1rem;
+    flex:5;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.music:hover{
+    background-color: rgb(235, 223, 223);
+    transform: scale(1.05);
+}
+
+
+@media(max-width:700px){
+    .musics{
+        grid-template-columns: 1fr;
+
+    }
+
+    .music{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .music-image{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:1rem;
+    }
+
+
+    .music-image a{
+        width:70%;
+    }
+
+    .music-image a>img{
+        width: 100%;
+    }
+}
